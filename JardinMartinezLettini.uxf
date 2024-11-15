@@ -1,0 +1,53 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>560</x><y>210</y><w>210</w><h>190</h></coordinates><panel_attributes>JardinBotanico
+--
+
+--
++agregarPlanta:(Planta planta)
++mostrarPlantas():void
++podarPlantas():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>780</y><w>210</w><h>190</h></coordinates><panel_attributes>Arbol
+--
+_-ALTURA_MAXIMA = 10_
+-altura:int
+--
++Arbol:(String,String,String,int)
++podar():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>510</y><w>210</w><h>190</h></coordinates><panel_attributes>Planta
+--
+-nombre:String
+-ubicacion:String
+-clima:String
+-
++Planta:(String,String,String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>780</y><w>210</w><h>190</h></coordinates><panel_attributes>Arbusto
+--
+_-FOLLAJE_MIN = 10_
+_-FOLLAJE_MAX = 1_
+-follaje:int
+--
++Arbusto:(String,String,String,int)
++podar():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>890</x><y>1100</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+Temporada
+--
++PRIMAVERA, 
++VERANO,
++OTOÑO, 
++INVIERNO</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>890</x><y>790</y><w>210</w><h>190</h></coordinates><panel_attributes>Flor
+--
+-temporada:Temporada
+-
++Flor:(String,String,String,Temporada)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>980</x><y>970</y><w>100</w><h>150</h></coordinates><panel_attributes>lt=&lt;-
+m1= 1
+-temporada</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>690</y><w>180</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>160;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>670</x><y>690</y><w>40</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;20;90</additional_attributes></element><element><id>Relation</id><coordinates><x>760</x><y>690</y><w>260</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;240;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>480</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Podable
+--
+
+--
+/podar():void/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>660</y><w>40</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>20;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>660</y><w>180</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>160;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>390</y><w>70</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m1= *
+-plantas</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>220</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Excepcion&gt;&gt;
+PlantaDuplicadaExcepcion
+--
+_-MESSAGE__
+--
++NaveDuplicadaExcepcion()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>310</y><w>140</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>120;10;10;10</additional_attributes></element></diagram>
